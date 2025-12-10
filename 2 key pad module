@@ -24,3 +24,8 @@ void loop() {
     Serial.println(key);
   }
 }
+componets:
+Arduino 1
+usb cable 1
+jumper cable 8
+4x4 matrix keyboard
