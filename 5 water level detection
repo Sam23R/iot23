@@ -1,0 +1,30 @@
+const int trig = 9, echo = 10;
+int dist;
+
+void setup() {
+  pinMode(trig, OUTPUT);
+  pinMode(echo, INPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  digitalWrite(trig, LOW);
+  delayMicroseconds(2);
+
+  digitalWrite(trig, HIGH);
+  delayMicroseconds(10);
+  digitalWrite(trig, LOW);
+
+  dist = pulseIn(echo, HIGH) * 0.034 / 2;
+
+  Serial.print("Distance: ");
+  Serial.print(dist);
+  Serial.println(" cm");
+
+  if (dist < 50)
+    Serial.println("Low Water Level!");
+  else
+    Serial.println("Water Level OK");
+
+  delay(1000);
+}
