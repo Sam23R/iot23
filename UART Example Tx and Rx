@@ -1,0 +1,20 @@
+void setup() {
+  Serial.begin(9600); // hardware UART
+}
+
+void loop() {
+  String message = "Hello from Transmitter Arduino!";
+  Serial.println(message);
+  delay(1000);
+}
+
+void setup() {
+  Serial.begin(9600); // hardware UART
+}
+
+void loop() {
+  if (Serial.available() > 0) {
+    String receivedData = Serial.readStringUntil('\n');
+    Serial.println("Received: " + receivedData);
+  }
+}
