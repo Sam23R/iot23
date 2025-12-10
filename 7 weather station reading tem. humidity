@@ -25,3 +25,15 @@ void loop() {
 
   delay(1000);  
 }
+componets:
+Arduino 1
+jumper cable 10
+bread board 1
+led 2
+resistor 7
+lcd 16*2 1
+potentiometer 1
+temprature sesor 1
+soil moisture sensore 1
+push button 5
+reststance 2 
