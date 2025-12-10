@@ -1,0 +1,25 @@
+// Gas sensor (MQ-5) with buzzer
+const int gasSensorPin = A0;
+const int buzzerPin = 8;
+const int gasThreshold = 500;
+
+void setup() {
+  pinMode(buzzerPin, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int sensorValue = analogRead(gasSensorPin);
+  Serial.print("Gas Sensor Value: ");
+  Serial.println(sensorValue);
+
+  if (sensorValue > gasThreshold) {
+    Serial.println("ALERT: Gas detected! Buzzer ON!");
+    digitalWrite(buzzerPin, HIGH);
+  } else {
+    Serial.println("Safe: Gas level normal.");
+    digitalWrite(buzzerPin, LOW);
+  }
+
+  delay(200);
+}
