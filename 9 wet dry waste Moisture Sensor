@@ -21,3 +21,11 @@ void loop() {
 
   delay(1000);
 }
+
+componets:
+Arduino 1
+jumper cable 8
+bread board 1
+led 1
+reststance 1
+moisture sesor 1(dht22)
