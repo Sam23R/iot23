@@ -22,3 +22,11 @@ void loop() {
   digitalWrite(ledPin, LOW);
   delay(sensorValue);
 }
+
+componets:
+Arduino 1
+jumper cable 4
+bread board 1
+led 1
+reststance 2 
+ldr 1
