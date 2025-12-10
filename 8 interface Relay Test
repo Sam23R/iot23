@@ -12,3 +12,11 @@ void loop() {
   digitalWrite(relayPin, LOW);
   delay(2000);
 }
+
+componets:
+Arduino 1
+jumper cable 6
+bread board 1
+dc moter 1
+relay spdt 1
+9v battery 1
