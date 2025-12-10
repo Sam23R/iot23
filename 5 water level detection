@@ -28,3 +28,10 @@ void loop() {
 
   delay(1000);
 }
+componets:
+Arduino 1
+jumper cable 4
+usb cable 1
+ultrasonic sesor 1
+
+reststance 2 
