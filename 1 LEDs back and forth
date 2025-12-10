@@ -23,3 +23,10 @@ void loop() {
     digitalWrite(ledPin[i], LOW);
   }
 }
+
+componets:
+Arduino 1
+jumper cable 6
+bread board 1
+led 5
+resistance 5
