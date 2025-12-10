@@ -1,0 +1,25 @@
+#define NUM_LEDS 5
+int ledPin[NUM_LEDS] = {2, 3, 4, 5, 6};
+int waitTime = 500;
+
+void setup() {
+  for (int i = 0; i < NUM_LEDS; i++) {
+    pinMode(ledPin[i], OUTPUT);
+  }
+}
+
+void loop() {
+  // Forward
+  for (int i = 0; i < NUM_LEDS; i++) {
+    digitalWrite(ledPin[i], HIGH);
+    delay(waitTime);
+    digitalWrite(ledPin[i], LOW);
+  }
+
+  // Backward (skip first and last to create bounce effect)
+  for (int i = NUM_LEDS - 2; i > 0; i--) {
+    digitalWrite(ledPin[i], HIGH);
+    delay(waitTime);
+    digitalWrite(ledPin[i], LOW);
+  }
+}
